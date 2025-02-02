@@ -24,7 +24,7 @@ jobs:
         run: |
           echo "Printing USERNAME env variable from previous step:"
           echo "Username: ${{ env.USERNAME }}"
-
+          exit 1 
       - name: Step 4 - Printing USER_2
         run: |
           echo "USER_2: ${{ env.USER_2 }}"
